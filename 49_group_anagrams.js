@@ -10,19 +10,3 @@
     }
     return Object.values(obj)
 };
-
-/**
- * @param {number} n
- * @return {boolean}
- */
- var isHappy = function (n) {
-    let total = 0;
-
-    for (let i of n.toString()) {
-        total += Number(i) * Number(i)
-    }
-    while (total > 9) {
-        total = isHappy(total)
-    }
-    return total == 1
-};
