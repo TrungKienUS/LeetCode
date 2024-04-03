@@ -5,6 +5,7 @@
  */
 var rotate = function (nums, k) {
   k = k % nums.length;
+  console.log(3 - (4 % 3));
   reverseArray(nums, 0, nums.length - 1);
   reverseArray(nums, 0, k - 1);
   reverseArray(nums, k, nums.length - 1);
